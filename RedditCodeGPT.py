@@ -7,12 +7,7 @@ from pydub import AudioSegment
 from pydub.playback import play
 import time
 
-
-with open('api_key.json', 'r') as json_file:
-    api_key_data = json.load(json_file)
-    your_api_key = api_key_data['api_key']
-
-client = OpenAI(api_key=your_api_key)
+client = OpenAI(api_key="your_api_key")
 
 
 def play_audio(file_path):
